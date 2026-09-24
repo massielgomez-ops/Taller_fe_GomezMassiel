@@ -8,30 +8,28 @@
 
 
       <span class="eyebrow">
-        CAFÉ ARTESANAL
+        {{ hero.eyebrow }}
       </span>
 
 
       <h1>
-        El mejor café
-        comienza aquí.
+        {{ hero.title }}
       </h1>
 
 
       <p>
-        Café recién preparado, postres artesanales
-        y un espacio pensado para disfrutar cada momento.
+        {{ hero.description }}
       </p>
 
 
       <div class="hero-buttons">
         <a href="#productos" class="btn-primary">
-          Ver nuestros productos
+          Explorar planes
         </a>
 
 
         <a href="#nosotros" class="btn-secondary">
-          Conócenos
+          Conoce el método
         </a>
       </div>
 
@@ -43,8 +41,8 @@
 
 
       <img
-        src="https://hips.hearstapps.com/hmg-prod/images/cafe-1599479980.jpg"
-        alt="Café artesanal"
+        [src]="hero.image"
+        [alt]="hero.imageAlt"
       >
 
 

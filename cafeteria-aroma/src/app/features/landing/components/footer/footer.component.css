@@ -1,6 +1,6 @@
 .footer {
   padding: 50px 24px 25px;
-  background: #201914;
+  background: #0b1422;
   color: white;
 }
 
@@ -18,11 +18,11 @@
 }
 
 .footer h3 span {
-  color: #b77945;
+  color: var(--lime);
 }
 
 .footer p {
-  color: #aaa;
+  color: #aab5c2;
   font-size: 14px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .footer-links a {
-  color: #ddd;
+  color: #dbe3e8;
   text-decoration: none;
   font-size: 14px;
 }
@@ -41,7 +41,7 @@
   max-width: 1100px;
   margin: 40px auto 0;
   padding-top: 20px;
-  border-top: 1px solid #403832;
+  border-top: 1px solid #26364a;
 
   color: #888;
   font-size: 13px;

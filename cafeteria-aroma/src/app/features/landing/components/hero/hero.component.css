@@ -1,28 +1,28 @@
 .hero {
-  min-height: 90vh;
+  min-height: 92vh;
   display: flex;
   align-items: center;
-  background: #f8f4ef;
+  background: linear-gradient(120deg, #e9f0e7 0%, #f5f7f3 54%, #dfeaff 100%);
   padding: 100px 24px 60px;
 }
 
 .hero-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1180px;
   margin: auto;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 70px;
+  gap: 58px;
 }
 
 .hero-text {
-  max-width: 580px;
+  max-width: 620px;
 }
 
 .eyebrow {
-  color: #a66b3f;
+  color: #1f5eff;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -31,13 +31,14 @@
 .hero h1 {
   font-size: clamp(48px, 6vw, 76px);
   line-height: 1;
-  color: #2b2118;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #101b2d;
   margin: 20px 0;
 }
 
 .hero p {
   max-width: 520px;
-  color: #6b625c;
+  color: #627083;
   line-height: 1.7;
   font-size: 18px;
 }
@@ -52,25 +53,26 @@
 .btn-secondary {
   display: inline-block;
   padding: 14px 22px;
-  border-radius: 8px;
+  border-radius: 999px;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .btn-primary {
-  background: #2b2118;
+  background: #1f5eff;
   color: white;
 }
 
 .btn-secondary {
-  border: 1px solid #2b2118;
-  color: #2b2118;
+  border: 1px solid #101b2d;
+  color: #101b2d;
 }
 
 .hero-image {
-  height: 550px;
+  height: 560px;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 28px 28px 90px 28px;
+  box-shadow: 18px 18px 0 #c8f169;
 }
 
 .hero-image img {
@@ -100,6 +102,7 @@
 
   .hero-image {
     height: 400px;
+    box-shadow: 10px 10px 0 #c8f169;
   }
 
 }

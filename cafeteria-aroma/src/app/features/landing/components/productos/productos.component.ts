@@ -12,28 +12,22 @@ export class ProductosComponent {
 
   productos = [
     {
-      nombre: 'Café Americano',
-      descripcion: 'Café intenso preparado al momento.',
-      precio: 8,
-      imagen: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80'
+      nombre: 'Fuerza base', nivel: 'Principiante',
+      descripcion: 'Rutinas guiadas para aprender técnica, moverte mejor y ganar confianza.',
+      precio: 39, duracion: 'por semana',
+      imagen: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=700&q=85', destacado: false
     },
     {
-      nombre: 'Croissant',
-      descripcion: 'Croissant artesanal recién horneado.',
-      precio: 7,
-      imagen: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80'
+      nombre: 'Potencia', nivel: 'Intermedio',
+      descripcion: 'Fuerza, cardio y progresión semanal para acelerar tus objetivos.',
+      precio: 59, duracion: 'por semana',
+      imagen: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=85', destacado: true
     },
     {
-      nombre: 'Cheesecake',
-      descripcion: 'Cheesecake cremoso con frutos rojos.',
-      precio: 12,
-      imagen: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80'
-    },
-    {
-      nombre: 'Frappé',
-      descripcion: 'Bebida fría de café y chocolate.',
-      precio: 11,
-      imagen: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80'
+      nombre: 'Rendimiento', nivel: 'Avanzado',
+      descripcion: 'Programa personalizado para quienes quieren superar su propio límite.',
+      precio: 79, duracion: 'por semana',
+      imagen: 'https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=700&q=85', destacado: false
     }
   ];
 

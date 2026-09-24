@@ -3,12 +3,13 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid #eee;
+  background: rgba(245, 247, 243, 0.9);
+  border-bottom: 1px solid rgba(16, 27, 45, 0.1);
+  backdrop-filter: blur(16px);
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1180px;
   margin: auto;
   padding: 18px 24px;
   display: flex;
@@ -17,14 +18,15 @@
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: 800;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
   text-decoration: none;
-  color: #2b2118;
+  color: #101b2d;
 }
 
 .logo span {
-  color: #b77945;
+  color: #1f5eff;
 }
 
 .nav-links {
@@ -34,20 +36,20 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #4b4038;
+  color: #627083;
   font-size: 15px;
 }
 
 .nav-links a:hover {
-  color: #b77945;
+  color: #1f5eff;
 }
 
 .btn-menu {
   text-decoration: none;
-  background: #2b2118;
+  background: #101b2d;
   color: white;
   padding: 11px 20px;
-  border-radius: 8px;
+  border-radius: 999px;
   font-size: 14px;
 }
 
@@ -56,6 +58,9 @@
   .nav-links {
     display: none;
   }
+
+  .container { padding: 15px 18px; }
+  .btn-menu { padding: 10px 14px; font-size: 12px; }
 
 }
 

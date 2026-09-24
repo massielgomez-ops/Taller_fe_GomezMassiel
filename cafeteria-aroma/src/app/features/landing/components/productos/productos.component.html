@@ -4,17 +4,16 @@
   <div class="encabezado">
 
 
-    <span>PARA DISFRUTAR</span>
+    <span>ENTRENA A TU MANERA</span>
 
 
     <h2>
-      Nuestros favoritos
+      Elige tu próximo nivel
     </h2>
 
 
     <p>
-      Descubre algunos de los productos favoritos
-      de nuestros clientes.
+      Planes claros, acompañamiento cercano y una comunidad que te mantiene en movimiento.
     </p>
 
 
@@ -27,7 +26,7 @@
     @for (producto of productos; track producto.nombre) {
 
 
-      <article class="producto-card">
+      <article class="producto-card" [class.featured]="producto.destacado">
 
 
         <div class="producto-image">
@@ -50,7 +49,8 @@
           </h3>
 
 
-          <p>
+            <p>
+            <span class="plan-level">{{ producto.nivel }}</span>
             {{ producto.descripcion }}
           </p>
 
@@ -59,13 +59,13 @@
 
 
             <strong>
-              S/ {{ producto.precio }}.00
+              S/ {{ producto.precio }} <small>{{ producto.duracion }}</small>
             </strong>
 
 
-            <button>
-              Ver más
-            </button>
+            <a href="#contacto" [attr.aria-label]="'Elegir el plan ' + producto.nombre">
+              Elegir plan
+            </a>
 
 
           </div>

@@ -1,6 +1,6 @@
 .contacto {
   padding: 100px 24px;
-  background: white;
+  background: var(--surface);
 }
 
 .contacto-container {
@@ -13,7 +13,7 @@
 }
 
 .contacto span {
-  color: #b77945;
+  color: var(--blue);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -21,7 +21,8 @@
 
 .contacto h2 {
   font-size: 42px;
-  color: #2b2118;
+  color: var(--ink);
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .datos {
@@ -31,18 +32,18 @@
 
 .datos div {
   padding: 20px;
-  border: 1px solid #eee;
+  border: 1px solid var(--line);
   border-radius: 12px;
 }
 
 .datos strong {
-  color: #2b2118;
+  color: var(--ink);
 }
 
 .datos p {
   margin-bottom: 0;
   font-size: 14px;
-  color: #777;
+  color: var(--muted);
 }
 
 @media (max-width: 700px) {

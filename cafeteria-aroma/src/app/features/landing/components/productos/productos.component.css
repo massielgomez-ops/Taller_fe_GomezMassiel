@@ -1,6 +1,6 @@
 .productos {
   padding: 100px 24px;
-  background: white;
+  background: var(--surface);
 }
 
 
@@ -12,7 +12,7 @@
 
 
 .encabezado span {
-  color: #a66b3f;
+  color: var(--blue);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -20,7 +20,8 @@
 
 
 .encabezado h2 {
-  color: #2b2118;
+  color: var(--ink);
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 42px;
   margin: 12px 0;
 }
@@ -28,7 +29,7 @@
 
 .encabezado p {
   margin: auto;
-  color: #777;
+  color: var(--muted);
 }
 
 
@@ -38,16 +39,16 @@
 
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 22px;
 }
 
 
 .producto-card {
   overflow: hidden;
-  border: 1px solid #eee;
-  border-radius: 16px;
-  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
   transition: 0.3s;
 }
 
@@ -55,6 +56,11 @@
 .producto-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.producto-card.featured {
+  border-color: var(--blue);
+  box-shadow: 0 14px 0 rgba(31, 94, 255, 0.12);
 }
 
 
@@ -83,13 +89,13 @@
 
 
 .producto-content h3 {
-  color: #2b2118;
+  color: var(--ink);
   margin: 0 0 10px;
 }
 
 
 .producto-content p {
-  color: #777;
+  color: var(--muted);
   font-size: 14px;
   line-height: 1.6;
 }
@@ -104,18 +110,38 @@
 
 
 .producto-footer strong {
-  color: #a66b3f;
+  color: var(--blue);
   font-size: 18px;
 }
 
 
-.producto-footer button {
+.producto-footer button,
+.producto-footer a {
   border: none;
-  background: #2b2118;
+  background: var(--ink);
   color: white;
   padding: 9px 13px;
-  border-radius: 6px;
+  border-radius: 999px;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.plan-level {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.producto-footer small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 400;
 }
 
 
